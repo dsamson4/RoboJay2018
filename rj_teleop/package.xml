@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package>
+  <name>rj_teleop</name>
+  <version>0.0.0</version>
+  <description>Provides teleoperation for RJ using keyboard.</description>
+  <maintainer email="robojay@jhu.edu">robojay</maintainer>
+  <license>BSD</license>
+
+  <!-- Url tags are optional, but mutiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/rj_teleop</url> -->
+
+  <author email="mnovick1@jhu.edu">Max Novick</author>
+  <author email="jyee11@jhu.edu">Jeana Yee</author> 
+
+  <!-- The *_depend tags are used to specify dependencies -->
+  <!-- Dependencies can be catkin packages or system dependencies -->
+  <!-- Examples: -->
+  <!-- Use build_depend for packages you need at compile time: -->
+  <!--   <build_depend>message_generation</build_depend> -->
+  <!-- Use buildtool_depend for build tool packages: -->
+  <!--   <buildtool_depend>catkin</buildtool_depend> -->
+  <!-- Use run_depend for packages you need at runtime: -->
+  <!--   <run_depend>message_runtime</run_depend> -->
+  <!-- Use test_depend for packages you need only for testing: -->
+  <!--   <test_depend>gtest</test_depend> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>rosconsole</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>roscpp_serialization</build_depend>
+  <build_depend>roslib</build_depend>
+  <build_depend>rostime</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>std_srvs</build_depend>
+
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>rosconsole</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>roscpp_serialization</run_depend>
+  <run_depend>roslib</run_depend>
+  <run_depend>rostime</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>std_srvs</run_depend>
+  <!-- May also need base_controller run dependency -->
+
+</package>

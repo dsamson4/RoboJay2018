@@ -1,0 +1,39 @@
+<launch>
+  <node
+    pkg="rj_teleop"
+    type="rj_keys_to_twist_with_ramps.py"
+    name="rj_keys_to_twist"
+    output="screen">
+    <param name="linear_scale" value="0.4" type="double"/>
+    <param name="angular_scale" value="0.7" type="double"/>
+    <param name="linear_accel" value="0.3" type="double"/>
+    <param name="angular_accel" value="0.4" type="double"/>
+  </node>
+  <node
+    pkg="rosserial_python"
+    type="serial_node.py"
+    name="serial_node"
+    respawn="true">
+    <param name="port" value="/dev/ttyACM0"/>
+  </node>
+  <!--<node
+    name="rj_tf_broadcaster"
+    pkg="rj_tf"
+    type="rj_tf_broadcaster.py"
+    respawn="false"
+    output="screen">
+    <param name="rj" type="string" value="rj1" />
+  </node>-->
+  <!--<node
+    pkg="demo_video"
+    type="rj_teleop_video"
+    name="rj_teleop_video"
+    respawn="true"
+  />
+  <node
+    pkg="demo_video"
+    type="rj_keys_to_vlc.py"
+    name="rj_keys_to_vlc"
+    output="screen"
+  />-->
+</launch>
